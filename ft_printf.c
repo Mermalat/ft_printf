@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: merma <merma@student.42.fr>                +#+  +:+       +#+        */
+/*   By: memalli <memalli@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 23:25:00 by merma             #+#    #+#             */
-/*   Updated: 2026/02/17 23:25:00 by merma            ###   ########.fr       */
+/*   Updated: 2026/02/18 23:43:05 by memalli          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,12 +40,12 @@ int	ft_printf(const char *format, ...)
 	va_list	args;
 	int		print_length;
 
-	i = 0;
+	i = 0;	
 	print_length = 0;
 	va_start(args, format);
 	while (format[i])
 	{
-		if (format[i] == '%')
+		if (format[i] == '%' && format[i + 1])
 		{
 			print_length += ft_formats(args, format[i + 1]);
 			i++;
