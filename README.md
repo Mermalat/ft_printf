@@ -111,3 +111,9 @@ This section collects the theory and practical tips needed to understand how `ft
 ## Resources
 - [printf(3) man page](https://man7.org/linux/man-pages/man3/printf.3.html)
 - 42 School subject PDF.
+- My debates with ChatGPT, Claude, Gemini over va_args and their using cases.
+
+## How I Used AI in this
+- Me and AI Mostly worked debative on the project, I asked about what is va_args it explained it to me in my own language; and then I tried to compare it with the real linux manuals. When I decided they're pointing same subject and the AI is true, I accepted it and take AI's answer as a fact.
+
+- No code writing made by AI, only some of the readme part made by it because my english is not that strong.
