@@ -2,7 +2,7 @@
 # ft_printf
 
 ## Description
-`ft_printf` is a custom implementation of the standard C library function `printf`. This project mimics the behavior of `printf` for a specific set of conversions, providing a deep understanding of variadic functions and formatted output in C, `ft_printf` is not a deep function like `printf`.
+`ft_printf` is a custom implementation of the standard C library function `printf`. This project mimics the behavior of `printf` for a specific set of conversions, providing a deep understanding of variadic functions and formatted output in C, `ft_printf` is not a deep function like `printf`. Like we do not use stuff like `Buffer Management`, which is a way to optimize our function.
 
 ## Instructions
 In this part I will explain how to implement and use printf in your enviroment.
