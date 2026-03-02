@@ -6,13 +6,13 @@
 #    By: memalli <memalli@student.42kocaeli.com.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/18 17:40:03 by memalli           #+#    #+#              #
-#    Updated: 2026/02/25 19:36:23 by memalli          ###   ########.fr        #
+#    Updated: 2026/03/02 22:34:49 by memalli          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= libftprintf.a
 
-CC			= gcc
+CC			= cc
 CFLAGS		= -Wall -Wextra -Werror
 
 SRCS		= ft_printf.c \
