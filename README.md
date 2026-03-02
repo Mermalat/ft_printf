@@ -1,10 +1,11 @@
-*This project has been created as part of the 42 curriculum by merma.*
+*This project has been created as part of the 42 curriculum by memalli.*
 # ft_printf
 
 ## Description
-`ft_printf` is a custom implementation of the standard C library function `printf`. This project mimics the behavior of `printf` for a specific set of conversions, providing a deep understanding of variadic functions and formatted output in C.
+`ft_printf` is a custom implementation of the standard C library function `printf`. This project mimics the behavior of `printf` for a specific set of conversions, providing a deep understanding of variadic functions and formatted output in C, `ft_printf` is not a deep function like `printf`.
 
 ## Instructions
+In this part I will explain how to implement and use printf in your enviroment.
 
 ### Compilation
 To compile the library `libftprintf.a`, run:
@@ -109,6 +110,7 @@ void example(const char *fmt, ...) {
 This section collects the theory and practical tips needed to understand how `ft_printf` works. Paying careful attention to `stdarg.h` usage, correct `va_arg` types, and the format-string parsing logic is essential for a reliable implementation.
 
 ## Resources
+- [stdarg(3) man page](https://man7.org/linux/man-pages/man3/stdarg.3.html)
 - [printf(3) man page](https://man7.org/linux/man-pages/man3/printf.3.html)
 - 42 School subject PDF.
 - My debates with ChatGPT, Claude, Gemini over va_args and their using cases.
