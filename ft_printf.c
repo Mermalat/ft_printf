@@ -36,10 +36,13 @@ static int	ft_formats(va_list args, const char format)
 
 int	ft_printf(const char *format, ...)
 {
-	int		i;
 	va_list	args;
+	int		i;
 	int		print_length;
+	int		tmp;
 
+	if (!format)
+		return (-1);
 	i = 0;
 	print_length = 0;
 	va_start(args, format);
@@ -47,11 +50,19 @@ int	ft_printf(const char *format, ...)
 	{
 		if (format[i] == '%' && format[i + 1])
 		{
-			print_length += ft_formats(args, format[i + 1]);
+			tmp = ft_formats(args, format[i + 1]);
+			if (tmp == -1)
+				return (-1);
+			print_length += tmp;
 			i++;
 		}
 		else
-			print_length += ft_putchar_len(format[i]);
+		{
+			tmp = ft_putchar_len(format[i]);
+			if (tmp == -1)
+				return (-1);
+			print_length += tmp;
+		}
 		i++;
 	}
 	va_end(args);

@@ -14,7 +14,8 @@
 
 int	ft_putchar_len(char c)
 {
-	write(1, &c, 1);
+	if (write(1, &c, 1) == -1)
+		return (-1);
 	return (1);
 }
 
@@ -25,12 +26,14 @@ int	ft_putstr_len(char *s)
 	len = 0;
 	if (!s)
 	{
-		write(1, "(null)", 6);
+		if (write(1, "(null)", 6) == -1)
+			return (-1);
 		return (6);
 	}
 	while (s[len])
 	{
-		write(1, &s[len], 1);
+		if (write(1, &s[len], 1) == -1)
+			return (-1);
 		len++;
 	}
 	return (len);
