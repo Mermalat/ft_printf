@@ -54,15 +54,13 @@ int	ft_printf(const char *format, ...)
 			if (tmp == -1)
 				return (-1);
 			print_length += tmp;
-			i++;
+			i += 2;  // <-- degisiklik burada
+			continue ;
 		}
-		else
-		{
-			tmp = ft_putchar_len(format[i]);
-			if (tmp == -1)
-				return (-1);
-			print_length += tmp;
-		}
+		tmp = ft_putchar_len(format[i]);
+		if (tmp == -1)
+			return (-1);
+		print_length += tmp;
 		i++;
 	}
 	va_end(args);
