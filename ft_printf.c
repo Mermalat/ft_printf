@@ -54,7 +54,7 @@ int	ft_printf(const char *format, ...)
 			if (tmp == -1)
 				return (-1);
 			print_length += tmp;
-			i += 2;  // <-- degisiklik burada
+			i += 2;
 			continue ;
 		}
 		tmp = ft_putchar_len(format[i]);
